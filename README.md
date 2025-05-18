@@ -1,1 +1,1 @@
-A grid dashboard.
+A grid dashboard
