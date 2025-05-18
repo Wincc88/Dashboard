@@ -5,9 +5,13 @@
 
 .grid-container {
     display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: minmax(170px, auto);
     grid-template-areas: 
-    'menu menu header header header header'
-    'menu menu main main main right'; 
+    'menu menu header header header header header header header header'
+    'menu menu main main main main main main right right'
+    'menu menu main main main main main main right right'
+    'menu menu main main main main main main right right';
     gap: 10px;
     background-color: white;
     padding: 10px;
@@ -32,6 +36,7 @@
 .undertopright {
     grid-area: right;
     border: 2px solid green;
+    
 }
 
 .largerspace {
@@ -45,7 +50,10 @@
 }
 
 .largerspace > div {
-    margin: 5px;
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+
 }
 .div1 {
    grid-area: a;
