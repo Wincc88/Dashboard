@@ -760,19 +760,7 @@
             </div>
         </div>
 
-            <!--
-              <div class="opennav">
-                <button id="openbtn" name="open">☰This button</button>
-              </div> 
-             
-              
-              <div class="closenav">
-                <button id="closenbtn" name="close">X</button>
-              </div>  
-               --> 
-              
-
-
+            
 
     </div>
     
@@ -780,35 +768,23 @@
     <script> 
 
         
-         // const opennavs = document.querySelector(".opennav"); //
-         // const closenavs = document.querySelector(".closenav"); //
+         
          const offsidebar = document.querySelector(".sidebar");
          const gridy = document.querySelector(".grid-container"); 
-         
-         // const closebtn = document.querySelector("#closenav");//
-         
-         
-         
-
-             // opennav.addEventListener("click", opendiv); //
              
-             const smallscreen = window.matchMedia("(max-width: 600px)");
-
+        const smallscreen = window.matchMedia("(max-width: 600px)");
              
             
              function opendiv() {
 
                 if(smallscreen.matches) {
-                    alert("yea");
+            
                     const opennav = document.createElement('div');
                     opennav.classList.add("opennav");
                     gridy.appendChild(opennav);
                     const buttonop = document.createElement('button');
                     buttonop.textContent = '☰';
                     buttonop.id = 'openbtn';
-                    const tooltip = document.createElement('tt');
-                    tooltip.textContent = '☰menu';
-                    tooltip.id = "tooltiplay";
                     buttonop.id = 'openbtn';
                     opennav.appendChild(buttonop);
                     gridy.removeChild(offsidebar);
@@ -828,7 +804,7 @@
                 
                     remOpenav = document.querySelector(".opennav");
                     remOpenav.remove(); 
-                      alert("hmmm");
+                      
                     const closenav = document.createElement('div');
                     closenav.classList.add("closenav");
                     offsidebar.insertBefore(closenav, offsidebar.firstChild);;
@@ -851,57 +827,8 @@
         
              }
 
-
-             /**
-             function closetoopen() {
-                
-                // opennav is not removed but can remove #open button ** issue //
-                 offsidebar.remove();
-        
-             }
-             
-             
-             // whenever I put this back, the offside removes without showing X and offside .**** issue only taken #openid not closebtnid//
-             const butclose = document.querySelector("#openbtn"); 
-             butclose.addEventListener("click", closetoopen);  **/
-             
-             
-             
-            
-             
-
-                   /** now
-                      function opendiv() {
-                        alert("hi");
-                        opennavs.parentNode.removeChild(opennavs);
-                        const closenav = document.createElement("div");
-                        closenav.classList.add("closenav");
-                        const closebtn = document.createElement("button");
-                        closebtn.textContent = "Xvgjhjk";
-                        closebtn.style.width = "50px";
-                        closebtn.style.color = "green";
-                        closebtn.style.border = "2px solid red";
-                        closebtn.style.backgroundColor = "blue";
-                        closenav.appendChild(closebtn);
-                        gridy.appendChild(closenav);
-                        
-                        //offsidebar.classList.toggle("closenav");//
-                        // gridy.appendChild(offsidebar); //
-                      }
-
-                      now **/
-
-             /**
-             closenav.addEventListener("click", closediv);
-                       function closediv() {
-                         
-                         offsidebar.parentNode.removeChild(offsidebar);
-                         closenavs.parentNode.removeChild(closenavs);
-    
-                      }  **/
               
 
-               
     </script>   
 
 </body>
