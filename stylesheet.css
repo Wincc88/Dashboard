@@ -902,15 +902,21 @@
 @media screen and (max-width: 600px) {
 
   .grid-container {
+    display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(100px, auto);
     grid-template-areas: 
-    "header"
-    "main"
-    "right"
-    "menu";
+    'header'
+    'main'
+    'right'
+    'menu';
   }
 
+  .theheader {
+  grid-area: header;
+  text-align: center;
+  background-color: white;
+  }
 
   .projectcontainer {
    grid-area: b;
