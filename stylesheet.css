@@ -1002,10 +1002,10 @@
 
 }
  
-  .theheader {grid-area: header / span 1;} 
-  .largerspace {grid-area: main / span 1;}
-  .undertopright {grid-area: right / span 1;}
-  .sidebar {grid-area: menu / span 1;} 
+  .theheader {grid-area: header;} 
+  .largerspace {grid-area: main;}
+  .undertopright {grid-area: right;}
+  .sidebar {grid-area: menu;} 
 
 
   #closebtn, #openbtn {
