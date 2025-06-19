@@ -903,14 +903,14 @@
  
   .grid-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
     grid-auto-rows: auto;
     grid-template-areas: 
     'header'
     'main'
     'right'
     'menu';
-    border: 2px solid red;
+    border: 2px solid blue;
   } 
 
   .theheader {
