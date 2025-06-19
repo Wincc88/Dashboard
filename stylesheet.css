@@ -908,7 +908,7 @@
   
  
   .grid-container {
-
+    display: grid;
     grid-template-columns: auto;
     grid-auto-rows: minmax(100px, auto);
     grid-template-areas: 
@@ -916,6 +916,7 @@
     'main'
     'right'
     'menu';
+    border: 2px solid yellow;
   } 
 
   .theheader {
@@ -923,11 +924,7 @@
   text-align: center;
   background-color: white;
   }
-
-  .largerspace {
-    grid-area: main;
-    display: grid;
-  }
+  
 
   .projectcontainer {
    grid-area: b;
@@ -946,13 +943,6 @@
    background-color:  rgb(222, 234, 244);;
 }
 
-.undertopright {
-  grid-area: right;
-}
-
-.sidebar {
-  grid-area: menu;
-}
 
 .closenav {
   display: grid;
@@ -1018,10 +1008,10 @@
 
 }
  
-  /** .theheader {grid-area: header;} 
-  .largerspace {grid-area: main;} 
+  .theheader {grid-area: header;} 
+  .largerspace {grid-area: main;}
   .undertopright {grid-area: right;}
-  .sidebar {grid-area: menu;} **/
+  .sidebar {grid-area: menu;} 
 
 
   #closebtn, #openbtn {
