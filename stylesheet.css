@@ -903,15 +903,14 @@
  
   .grid-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     grid-auto-rows: auto;
-    column-count: 1;
     grid-template-areas: 
     'header'
     'main'
     'right'
     'menu';
-    border: 2px solid yellow;
+    border: none;
   } 
 
   .theheader {
