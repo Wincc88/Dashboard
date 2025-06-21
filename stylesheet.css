@@ -911,7 +911,7 @@
     'right'
     'menu';
     overflow-x: scroll;
-    border: 2px solid red;
+    border: none;
   } 
 
   .theheader {
