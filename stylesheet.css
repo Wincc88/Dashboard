@@ -910,7 +910,8 @@
     'main'
     'right'
     'menu';
-    border: none;
+    overflow-x: scroll;
+    border: 2px solid red;
   } 
 
   .theheader {
